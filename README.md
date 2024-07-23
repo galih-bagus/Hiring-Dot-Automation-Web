@@ -73,3 +73,7 @@ Start Allure report
 ```bash
   npm run start
 ```
+
+## Report Automation Using Allure Report
+
+![screenshot allure report](https://raw.githubusercontent.com/galih-bagus/Hiring-Dot-Automation-Web/Feat/Login/screenshot%20allure%20report.png?token=GHSAT0AAAAAACVFXTJBEZBJ7IOFB2LMJE6YZU7FXFQ)

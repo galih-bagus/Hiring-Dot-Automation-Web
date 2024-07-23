@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Jul 23 11:09:50 ICT 2024","Tue Jul 23 11:09:57 ICT 2024","6914","Authentication","Login","","","","As user, i can login facebook with valid data",""
+"passed","Tue Jul 23 11:09:46 ICT 2024","Tue Jul 23 11:09:49 ICT 2024","2836","Authentication","Login","","","","As user, i can't login facebook without password",""
+"passed","Tue Jul 23 11:09:49 ICT 2024","Tue Jul 23 11:09:50 ICT 2024","1379","Authentication","Login","","","","As user, i can't login facebook without username",""
+"passed","Tue Jul 23 11:09:42 ICT 2024","Tue Jul 23 11:09:46 ICT 2024","3325","Authentication","Login","","","","As user, i can't login facebook with invalid data",""
