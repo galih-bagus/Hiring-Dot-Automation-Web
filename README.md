@@ -12,14 +12,22 @@
 
 To run this project, you will need to add the following environment variables to your .env file
 
+URL Site
 `URL`
 
+Username facebook valid
 `USERNAME_FACEBOOK_VALID`
 
+Password facebook valid
 `PASSWORD_FACEBOOK_VALID`
 
+Name facebook valid
+`NAME_FACEBOOK_VALID`
+
+Username facebook invalid
 `USERNAME_FACEBOOK_INVALID`
 
+Password facebook invalid
 `PASSWORD_FACEBOOK_INVALID`
 
 ## Run Locally
