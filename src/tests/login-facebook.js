@@ -18,6 +18,7 @@ describe("Authentication", function() {
             let pswd = process.env.PASSWORD_FACEBOOK_INVALID
             await helper.login(user, pswd)
             const errorMessage = await element.getTextXpath(`//div[@id='error_box']//div[2]`)
+                // Assertion alert error
             await assert.assertionActualExpected(errorMessage, 'Invalid username or password')
         })
         it("As user, i can't login facebook without password", async function() {
@@ -25,8 +26,8 @@ describe("Authentication", function() {
             let pswd = process.env.PASSWORD_FACEBOOK_INVALID
             await helper.login(user, pswd, false)
             const errorMessage = await element.getTextXpath(`//div[@id='error_box']//div[2]`)
+                // Assertion alert error
             await assert.assertionActualExpected(errorMessage, 'Invalid username or password')
-            await driver.sleep(6000)
         })
         it("As user, i can't login facebook without username", async function() {
             await element.clearInputXpath(`//input[@id='email']`)
@@ -34,6 +35,7 @@ describe("Authentication", function() {
             let pswd = process.env.PASSWORD_FACEBOOK_INVALID
             await helper.login(user, pswd, true, false)
             const errorMessage = await element.getTextXpath(`//div[@id='error_box']//div[2]`)
+                // Assertion alert error
             await assert.assertionActualExpected(errorMessage, 'Invalid username or password')
         })
         it("As user, i can login facebook with valid data", async function() {
@@ -41,6 +43,7 @@ describe("Authentication", function() {
             let pswd = process.env.PASSWORD_FACEBOOK_VALID
             await helper.login(user, pswd)
             const nameSidebar = await element.getTextXpath(`(//div[@data-visualcompletion]//span[normalize-space()='${nameValid}'])[2]`)
+                // Assertion success login
             await assert.assertionActualExpected(nameSidebar, nameValid)
         })
     })
