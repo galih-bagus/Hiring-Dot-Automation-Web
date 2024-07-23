@@ -9,9 +9,13 @@ async function openWebsite() {
     await driver.manage().window().maximize();
 }
 
-async function login(user, password) {
-    await element.fillFilledXpath(`//input[@id='email']`, user);
-    await element.fillFilledXpath(`//input[@id='pass']`, password);
+async function login(user, password, withoutPassword = true, withoutUsername = true) {
+    if (withoutUsername == true) {
+        await element.fillFilledXpath(`//input[@id='email']`, user);
+    }
+    if (withoutPassword == true) {
+        await element.fillFilledXpath(`//input[@id='pass']`, password);
+    }
     await element.clickButtonUntilFindXpath(`//button[@name='login']`);
 }
 
