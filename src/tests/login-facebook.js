@@ -36,5 +36,12 @@ describe("Authentication", function() {
             const errorMessage = await element.getTextXpath(`//div[@id='error_box']//div[2]`)
             await assert.assertionActualExpected(errorMessage, 'Invalid username or password')
         })
+        it("As user, i can login facebook with valid data", async function() {
+            let user = process.env.USERNAME_FACEBOOK_VALID
+            let pswd = process.env.PASSWORD_FACEBOOK_VALID
+            await helper.login(user, pswd)
+            const nameSidebar = await element.getTextXpath(`(//div[@data-visualcompletion]//span[normalize-space()='${nameValid}'])[2]`)
+            await assert.assertionActualExpected(nameSidebar, nameValid)
+        })
     })
 })
